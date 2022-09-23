@@ -167,13 +167,15 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 }
 
 .prev {
-	margin-top:5rem;
+	margin-top: 5rem;
 	float: left;
 }
 
 .next {
 	float: right;
-	margin-top:5rem;
+	margin-top: 5rem;
+	position: absolute;
+	right: 18%;
 }
 
 /************carousel***********/
