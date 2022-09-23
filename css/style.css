@@ -173,6 +173,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 
 .next {
 	float: right;
+	margin-top:5rem;
 }
 
 /************carousel***********/
