@@ -1,5 +1,9 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Readex+Pro:wght@700&display=swap');
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Readex+Pro:wght@700&display=swap')
+	;
+
 @font-face {
 	font-family: 'KOTRA_BOLD-Bold';
 	src:
@@ -12,6 +16,7 @@
 html {
 	font-size: 20px;
 	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 
 body {
@@ -26,11 +31,13 @@ body {
 .material-symbols-outlined {
 	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
 }
-.pos-relative{
-	position:relative;
+
+.pos-relative {
+	position: relative;
 }
-.pos-absolute{
-	position:absolute;
+
+.pos-absolute {
+	position: absolute;
 }
 /*************header****************/
 header.main-header { /* header 태그중 클래스값이 main-header인 요소를 선택, 종속 선택자 */
@@ -50,8 +57,9 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	max-width: 1190px;
 	margin: 0 auto;
 }
-.height1080{
-	height:1080px;
+
+.height1080 {
+	height: 1080px;
 }
 
 .main-header>.container {
@@ -62,10 +70,11 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	font-size: 1.5rem;
 	margin-top: 2rem;
 }
-.name{
+
+.name {
 	font-family: 'Readex Pro', 'Noto Sans KR', sans-serif;
-	
 }
+
 .name p:hover {
 	color: black
 }
@@ -75,7 +84,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 }
 
 .header-word h2 {
-	font-family: 'KOTRA_BOLD-Bold' , 'Noto Sans KR', sans-serif;
+	font-family: 'KOTRA_BOLD-Bold', 'Noto Sans KR', sans-serif;
 	margin-top: 5rem;
 	color: black;
 	font-size: 3rem;
@@ -95,15 +104,11 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	font-size: .8rem;
 }
 
-
-
 /**************section***************/
-
 .list {
-	margin-top:1rem;
 	text-align: center;
 	font-size: 2rem;
-
+	padding: 2rem;
 }
 
 .list-img {
@@ -114,31 +119,102 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 .list p {
 	display: inline;
 	border-bottom: 1px solid black;
-	margin-bottom: 1rem;
+	text-transform: capitalize;
 }
-.about-table{
-	margin:2rem 0;
-	display:flex;
+
+.about-table {
+	margin: 3.25rem 0 2rem 0;
+	display: flex;
 	flex-direction: column;
-	row-gap:5rem;
+	row-gap: 5rem;
 }
-.firstline,.secondline{
-	display:flex;
-	column-gap:5rem;
+
+.firstline, .secondline {
+	display: flex;
+	column-gap: 5rem;
 	justify-content: space-around;
 }
 
-.about-icon{
-	width: 10rem;
+.about-icon {
+	width: 12rem;
 }
-.who, .birth, .where, .phone, .email,.mbti{
-	width:2.5rem;
+
+.about-icon span {
+	vertical-align: super;
+	font-size: 1.4rem;
 }
-.comment{
-	margin-top:8rem;
-	margin:8rem auto auto 4rem;
+
+.about-icon p {
+	font-size: 1.6rem;
+}
+
+.who, .birth, .where, .phone, .email, .mbti {
+	width: 2.5rem;
+}
+
+.comment {
+	margin: 7rem auto auto 4rem;
 	font-size: 2rem;
 }
+
+.kakao {
+	background-color: #F9E000;
+}
+
+/**********************second article***********************/
+
+.project-img img {
+	width: 15rem;
+}
+
+.prev {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
+/************carousel***********/
+.carousel {
+	max-width: 880px;
+	height: 300px;
+	overflow:hidden;
+	margin: 1rem auto;
+	/* overflow: hidden; */
+	clear: both;
+
+}
+.carousel div img {
+	float: left;
+}
+
+#projects{
+	height: 300px;
+	width: 500%;
+	transition: all ease-in-out 1s;
+	
+}
+.project{
+	width: 880px;
+	float: left;
+}
+
+.project-desc{
+	text-indent: 2rem;
+	margin-top:2rem;
+}
+.project-desc p:first-child{
+	font-size: 1.3rem;
+}
+.project-desc p:last-child{
+	font-size: 1.1rem;
+}
+
+.project::before{
+	clear:both;
+}
+
 /*************aside****************/
 /*************footer****************/
 
