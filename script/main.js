@@ -1,27 +1,35 @@
 window.addEventListener("DOMContentLoaded", function() {
 	
-	const PREV = document.querySelector(".prev")
+	const PREV = document.querySelector(".prev");
 	const NEXT = document.querySelector(".next");
 	const PROJECTS = document.querySelector("#projects");
+	const BURGER = document.querySelector(".burger");
 	
-	let postIndex=0;
+	
+	let postIndex=1;
 	
 
 	NEXT.addEventListener("click", function(){
-		
-		if(postIndex>=6) postIndex=0;		
-		let coords = -880 * postIndex + "px";
-		PROJECTS.style.marginLeft=coords;
 		postIndex++;
-	})
-	//>= 프로젝트수 
-	PREV.addEventListener("click", function(){
-		if(postIndex<0) postIndex=5;		
-		let coords = -880 * postIndex + "px";
+		if(postIndex>6) postIndex=1;		
+		let coords = -880 * (postIndex-1) + "px";
 		PROJECTS.style.marginLeft=coords;
+		
+	})
+	//>= 
+	PREV.addEventListener("click", function(){
 		postIndex--;
-//postIndex = 프로젝트수-1
+		if(postIndex<=0) postIndex=6;		
+		let coords = -880 * (postIndex-1) + "px";
+		PROJECTS.style.marginLeft=coords;
+		
+//postIndex = 
 				
+	})
+	
+	BURGER.addEventListener("click", function(){
+		const menu= document.querySelector("#sidePane");
+		menu.classList.toggle('d-none');
 	})
 
 })

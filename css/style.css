@@ -48,7 +48,10 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	height: 1080px;
 	overflow: hidden;
 }
-
+.burger{
+	background-color:transparent;
+	border:none;
+}
 .burger img {
 	width: 2rem;
 }
@@ -238,6 +241,19 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	margin: 6rem 0 0 6rem;
 }
 /*************aside****************/
+
+#snb{
+	display:flex;
+	flex-direction: row-reverse;
+	column-gap:2rem;
+	font-size:1.2rem;
+
+}
+#sidePane{
+	position:fixed;
+	top:1%;
+	left:40%;
+}
 /*************footer****************/
 
 /****미디어 태그****/
