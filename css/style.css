@@ -157,25 +157,40 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	font-size: 2rem;
 }
 
-.kakao {
+.yellowfield {
 	background-color: #F9E000;
 }
 
 /**********************second article***********************/
 .project-img img {
 	width: 15rem;
+	object-fit: cover;
+	transition: all .3s;
+	overflow: visible;
+}
+
+.project-img img:hover {
+	transform: scale(1.2);
 }
 
 .prev {
+	opacity: 0.3;
 	margin-top: 5rem;
 	float: left;
+	border: 1px solid trnasparent;
+}
+
+.prev:hover, .next:hover {
+	opacity: 1;
 }
 
 .next {
+	opacity: 0.3;
 	float: right;
 	margin-top: 5rem;
 	position: absolute;
 	right: 18%;
+	border: 1px solid trnasparent;
 }
 
 /************carousel***********/
@@ -193,7 +208,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 
 #projects {
 	height: 300px;
-	width: 500%;
+	width: 600%;
 	transition: all ease-in-out 1s;
 	/*width 는 프로젝트 수만큼 곱해줘야함*/
 }
@@ -217,12 +232,17 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	font-size: 1.1rem;
 }
 
+.p-comment {
+	font-size: 2rem;
+	
+	margin: 6rem 0 0 6rem;
+}
 /*************aside****************/
 /*************footer****************/
 
 /****미디어 태그****/
 @media screen and (max-width: 480px) {
 	body {
-	background-color: white;
+		background-color: white;
 	}
 }

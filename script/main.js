@@ -9,14 +9,14 @@ window.addEventListener("DOMContentLoaded", function() {
 
 	NEXT.addEventListener("click", function(){
 		
-		if(postIndex>=5) postIndex=0;		
+		if(postIndex>=6) postIndex=0;		
 		let coords = -880 * postIndex + "px";
 		PROJECTS.style.marginLeft=coords;
 		postIndex++;
 	})
 	//>= 프로젝트수 
 	PREV.addEventListener("click", function(){
-		if(postIndex<0) postIndex=4;		
+		if(postIndex<0) postIndex=5;		
 		let coords = -880 * postIndex + "px";
 		PROJECTS.style.marginLeft=coords;
 		postIndex--;
