@@ -223,6 +223,6 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 /****미디어 태그****/
 @media screen and (max-width: 480px) {
 	body {
-		background-color: red;
+	background-color: white;
 	}
 }
