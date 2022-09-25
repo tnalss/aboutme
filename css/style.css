@@ -48,10 +48,12 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	height: 1080px;
 	overflow: hidden;
 }
-.burger{
-	background-color:transparent;
-	border:none;
+
+.burger {
+	background-color: transparent;
+	border: none;
 }
+
 .burger img {
 	width: 2rem;
 }
@@ -162,6 +164,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 
 .yellowfield {
 	background-color: #F9E000;
+	height:1080px;
 }
 
 /**********************second article***********************/
@@ -237,28 +240,90 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 
 .p-comment {
 	font-size: 2rem;
-	
 	margin: 6rem 0 0 6rem;
 }
 /*************aside****************/
-
-#snb{
-	display:flex;
+#snb {
+	display: flex;
 	flex-direction: row-reverse;
-	column-gap:2rem;
-	font-size:1.2rem;
-
+	column-gap: 2rem;
+	font-size: 1.2rem;
 }
-#sidePane{
-	position:fixed;
-	top:1%;
-	left:40%;
+
+#sidePane {
+	position: fixed;
+	top: 1%;
+	left: 40%;
 }
 /*************footer****************/
 
 /****미디어 태그****/
 @media screen and (max-width: 480px) {
-	body {
-		background-color: white;
+	html {
+		font-size: 16px;
 	}
+	header.main-header {
+	background-image: url("../images/phone_visual.png");
+	}
+	.main-header>.container {
+		column-gap: 14rem;
+	}
+	.about-table {
+		display: block;
+		text-align: center;
+	}
+	.about-icon {
+		width: 30rem;
+		height: 6rem;
+	}
+	.firstline, .secondline {
+		display: inline;
+	}
+	.comment p,.p-comment p {
+		font-size: 1.2rem;
+	}
+	.p-comment p{
+		padding-bottom:2rem;
+	}
+	#snb {
+		column-gap: .2rem;
+		font-size: .8rem;
+	}
+	#sidePane {
+		position: fixed;
+		top: 1%;
+		left: 40%;
+	}
+	.yellowfield{
+		height:auto;
+	}
+	.prev,.next{
+	display:none;
+	}	
+	.carousel{
+	height:auto;
+	}
+	.carousel div img{
+	clear:both;
+	}
+	#project{
+	height:auto;
+	width:auto;
+	
+	}
+	.project{
+	clear:both;
+	width:480px;	
+	margin-bottom:28px;
+	border-bottom:1px solid black;
+	}
+	.project-desc{
+	text-indent: 0;
+	
+	}
+	.project-desc p{
+	padding-left:254px;
+	}
+	
+	
 }
