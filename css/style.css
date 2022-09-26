@@ -49,14 +49,57 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	overflow: hidden;
 }
 
-.burger {
-	background-color: transparent;
-	border: none;
+
+
+/**버거메뉴**/
+.burger{
+	width:7.5rem;
+	height:7.5rem;
+	position:absolute;
+	right:10%;
+	top:4%;
+}
+.burger span{
+	display:block;
+	width:33%;
+	height:.5rem;
+	background:rgba(255,255,255,1);
+	color:transparent;
+	position:absolute;
+	font-size:0;
+	transition: all .5s;
+}
+.burger span:before, .burger span:after{
+	display:block;
+	content: "";
+	width:100%;
+	height:.5rem;
+	position:absolute;
+	background:rgba(255,255,255,1);
+	
+}
+.burger span:before{
+	top:-0.9rem;
+	
+}
+.burger span:after{
+	top:0.9rem;
+}
+.on span{
+	background:transparent;
+}
+.on span:before{
+	transform:rotate(-45deg);
+	top:0px;
+}
+.on span:after{
+	transform:rotate(45deg);
+	top:0px;
 }
 
-.burger img {
-	width: 2rem;
-}
+
+
+
 
 .container {
 	max-width: 1190px;
@@ -67,20 +110,24 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	height: 1080px;
 }
 
-.main-header>.container {
+
+
+/* .main-header>.container {
 	display: flex;
 	column-gap: 38.35rem;
 	align-items: baseline;
-	color: white;
+	
+
+} */
+
+.name {
+	font-family: 'Readex Pro', 'Noto Sans KR', sans-serif;
+		color: white;
 	font-size: 1.5rem;
 	margin-top: 2rem;
 }
 
-.name {
-	font-family: 'Readex Pro', 'Noto Sans KR', sans-serif;
-}
-
-.name p:hover {
+.name:hover {
 	color: black
 }
 
@@ -250,9 +297,9 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	font-size: 1.2rem;
 }
 
-#sidePane {
+#sidePanel {
 	position: fixed;
-	top: 1%;
+	top: 3%;
 	left: 40%;
 }
 /*************footer****************/
@@ -289,7 +336,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 		column-gap: .2rem;
 		font-size: .8rem;
 	}
-	#sidePane {
+	#sidePanel {
 		position: fixed;
 		top: 1%;
 		left: 40%;
