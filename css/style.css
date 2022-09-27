@@ -55,9 +55,10 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 .burger{
 	width:7.5rem;
 	height:7.5rem;
-	position:absolute;
+	position:fixed;
 	right:10%;
 	top:4%;
+	z-index: 2000;
 }
 .burger span{
 	display:block;
@@ -67,7 +68,8 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	color:transparent;
 	position:absolute;
 	font-size:0;
-	transition: all .5s;
+	transition: all .3s;
+	z-index: 2000;
 }
 .burger span:before, .burger span:after{
 	display:block;
@@ -76,7 +78,8 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	height:.5rem;
 	position:absolute;
 	background:rgba(255,255,255,1);
-	
+	transition: all .3s;
+	z-index: 2000;
 }
 .burger span:before{
 	top:-0.9rem;
@@ -98,9 +101,6 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 }
 
 
-
-
-
 .container {
 	max-width: 1190px;
 	margin: 0 auto;
@@ -111,18 +111,9 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 }
 
 
-
-/* .main-header>.container {
-	display: flex;
-	column-gap: 38.35rem;
-	align-items: baseline;
-	
-
-} */
-
 .name {
 	font-family: 'Readex Pro', 'Noto Sans KR', sans-serif;
-		color: white;
+	color: white;
 	font-size: 1.5rem;
 	margin-top: 2rem;
 }
@@ -301,6 +292,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	position: fixed;
 	top: 3%;
 	left: 40%;
+	background-color: rgba(255,255,255,.3);
 }
 /*************footer****************/
 
@@ -371,6 +363,5 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	.project-desc p{
 	padding-left:254px;
 	}
-	
 	
 }
