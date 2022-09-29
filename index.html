@@ -273,10 +273,10 @@
 	
 	<div id="sidePanel" class="d-none">
 	<ul id="snb">
-	<li><a href="#contacts">contacts</a></li>
-	<li><a href="#c-projects">projects</a></li>
-	<li><a href="#about-me">about me</a></li>
-	<li><a href="#top">home</a></li>
+	<li><a href="#">contacts</a></li>
+	<li><a href="#">projects</a></li>
+	<li><a href="#">about me</a></li>
+	<li><a href="#">home</a></li>
 	</ul>
 	
 	</div>
@@ -288,11 +288,39 @@
 
 
 
-
-
-
-
-
 	<script src="script/main.js"></script>
+<script>
+$(function(){
+	let pOffset=[1080*3,1080*2,1080*1,0];
+	let scTop;
+	
+	$("#snb li").click(function(e){
+                e.preventDefault();
+                let el = $(this); // #gnb li a : 여러개
+                let index = el.index(); // 반복가능 객체에서 인덱스를 알려주는 메소드                
+                $(window).scrollTop(pOffset[index])
+            })
+
+$(window).scroll(function(){
+		scTop = $(window).scrollTop(); // 소수점
+                //console.log("스크롤Top : "+parseInt(scTop));
+                if(scTop >= 0 && scTop < 1080) {
+                    $("#snb li").removeClass("tomato")
+                    $("#snb li:nth-child(4)").addClass("tomato")
+                } else if(scTop >= 1080 && scTop < 2160) {
+                    $("#snb li").removeClass("tomato")
+                    $("#snb li:nth-child(3)").addClass("tomato")
+                } else if (scTop >=2160 && scTop < 3240) {
+                    $("#snb li").removeClass("tomato")
+                    $("#snb li:nth-child(2)").addClass("tomato")
+                } else{
+                    $("#snb li").removeClass("tomato");
+					$("#snb li:nth-child(1)").addClass("tomato")
+                }
+	})
+	
+})
+
+</script>
 </body>
 </html>

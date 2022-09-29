@@ -297,6 +297,10 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	right: 23%;
 	background-color: rgba(255,255,255,.3);
 }
+/**********forjquery************/
+.tomato{
+	color :tomato;
+}
 /*************footer****************/
 
 /****미디어 태그****/
