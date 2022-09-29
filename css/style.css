@@ -57,7 +57,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	height:7.5rem;
 	position:fixed;
 	right:10%;
-	top:4%;
+	top:6%;
 	z-index: 2000;
 }
 .burger span{
@@ -118,7 +118,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	margin-top: 2rem;
 }
 
-.name:hover {
+.name a:hover {
 	color: black
 }
 
@@ -151,7 +151,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 .list {
 	text-align: center;
 	font-size: 2rem;
-	padding: 2rem;
+	padding: 4.5rem 2rem 2rem 2rem;
 }
 
 .list-img {
@@ -287,12 +287,14 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	column-gap: 2rem;
 	font-size: 1.2rem;
 	text-transform: capitalize;
+	margin:.2rem .8rem;
 }
+
 
 #sidePanel {
 	position: fixed;
-	top: 2%;
-	right: 25%;
+	top: 4%;
+	right: 23%;
 	background-color: rgba(255,255,255,.3);
 }
 /*************footer****************/
