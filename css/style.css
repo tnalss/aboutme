@@ -234,7 +234,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	margin-top: 5rem;
 	position: absolute;
 	right: 18%;
-	border: 1px solid trnasparent;
+	border: 1px solid transparent;
 }
 
 /************carousel***********/
@@ -283,7 +283,6 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 /*************aside****************/
 #snb {
 	display: flex;
-	flex-direction: row-reverse;
 	column-gap: 2rem;
 	font-size: 1.2rem;
 	text-transform: capitalize;
