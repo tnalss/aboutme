@@ -94,11 +94,11 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	background:transparent;
 }
 .on span:before{
-	transform:rotate(-45deg);
+	transform:rotate(+45deg);
 	top:0px;
 }
 .on span:after{
-	transform:rotate(45deg);
+	transform:rotate(-45deg);
 	top:0px;
 }
 
