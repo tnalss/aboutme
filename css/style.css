@@ -61,6 +61,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	z-index: 2000;
 }
 .burger span{
+	border-radius: 80%;
 	display:block;
 	width:33%;
 	height:.5rem;
@@ -72,6 +73,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 	z-index: 2000;
 }
 .burger span:before, .burger span:after{
+	border-radius: 80%;
 	display:block;
 	content: "";
 	width:100%;
@@ -206,6 +208,9 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 }
 
 /**********************second article***********************/
+.project-img{
+	margin: .5rem 1.5rem;
+}
 .project-img img {
 	width: 15rem;
 	object-fit: cover;
@@ -214,7 +219,7 @@ header.main-header { /* header 태그중 클래스값이 main-header인 요소�
 }
 
 .project-img img:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .prev {
